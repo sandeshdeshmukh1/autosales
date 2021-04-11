@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "order-auto-parts-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/orderAutoParts/OrderAutoPartsWebPart.js",
+          "manifest": "./src/webparts/orderAutoParts/OrderAutoPartsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "OrderAutoPartsWebPartStrings": "lib/webparts/orderAutoParts/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
